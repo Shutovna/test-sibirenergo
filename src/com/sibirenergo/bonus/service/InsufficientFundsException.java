@@ -5,7 +5,7 @@ package com.sibirenergo.bonus.service;
  * User: Nikita
  * Date: 21.09.2010
  * Time: 22:03:22
- * Генерируется в случае если на карте недостаточно средств для списания
+ * Р“РµРЅРµСЂРёСЂСѓРµС‚СЃСЏ РІ СЃР»СѓС‡Р°Рµ РµСЃР»Рё РЅР° РєР°СЂС‚Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ РґР»СЏ СЃРїРёСЃР°РЅРёСЏ
  */
 public class InsufficientFundsException extends Exception {
     private double cardBalance;

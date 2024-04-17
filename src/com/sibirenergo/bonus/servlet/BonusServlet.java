@@ -20,7 +20,7 @@ import java.util.Enumeration;
  * User: Nikita Shutov
  * Date: 18.09.2010
  * Time: 12:52:59
- * "Frontend" сервиса
+ * "Frontend" СЃРµСЂРІРёСЃР°
  */
 public class BonusServlet extends HttpServlet {
     private Logger log = Logger.getLogger(BonusServlet.class);

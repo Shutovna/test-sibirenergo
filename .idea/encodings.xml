@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/dao/BonusDao.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/PointOfSale.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/BonusService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/dao/BonusDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/dao/BonusDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/Card.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/Operation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/PointOfSale.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/Purchase.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/domain/UseBonus.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/BonusService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/BonusServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/CardNotFoundException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/InsufficientFundsException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/service/OperationAlreadyExistsException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sibirenergo/bonus/servlet/BonusServlet.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

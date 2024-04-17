@@ -5,7 +5,7 @@ package com.sibirenergo.bonus.service;
  * User: Nikita
  * Date: 21.09.2010
  * Time: 21:45:34
- * Генерируется в случае отсутствия карты 
+ * Р“РµРЅРµСЂРёСЂСѓРµС‚СЃСЏ РІ СЃР»СѓС‡Р°Рµ РѕС‚СЃСѓС‚СЃС‚РІРёСЏ РєР°СЂС‚С‹ 
  */
 public class CardNotFoundException extends Exception {
     public CardNotFoundException(String s) {

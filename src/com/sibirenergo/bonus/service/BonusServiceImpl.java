@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
  * User: Nikita
  * Date: 19.09.2010
  * Time: 14:28:13
- * Реализация сервиса операций
+ * Р РµР°Р»РёР·Р°С†РёСЏ СЃРµСЂРІРёСЃР° РѕРїРµСЂР°С†РёР№
  */
 @Transactional(propagation = Propagation.REQUIRED)
 public class BonusServiceImpl implements BonusService {

@@ -6,11 +6,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
  * User: Nikita Shutov
  * Date: 18.09.2010
  * Time: 14:48:17
- * Место совершения операций
+ * РњРµСЃС‚Рѕ СЃРѕРІРµСЂС€РµРЅРёСЏ РѕРїРµСЂР°С†РёР№
  */
 public class PointOfSale {
     /**
-     * Название места
+     * РќР°Р·РІР°РЅРёРµ РјРµСЃС‚Р°
      */
     private String name;
 

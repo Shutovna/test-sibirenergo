@@ -5,41 +5,41 @@ package com.sibirenergo.bonus.service;
  * User: Nikita
  * Date: 19.09.2010
  * Time: 14:28:01
- * Сервис для операций с картами
+ * РЎРµСЂРІРёСЃ РґР»СЏ РѕРїРµСЂР°С†РёР№ СЃ РєР°СЂС‚Р°РјРё
  */
 public interface BonusService {
     /**
-     * Операция регистрации покупки и начисления баллов
+     * РћРїРµСЂР°С†РёСЏ СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕРєСѓРїРєРё Рё РЅР°С‡РёСЃР»РµРЅРёСЏ Р±Р°Р»Р»РѕРІ
      *
-     * @param cardId      номер карты
-     * @param pointOfSale место совершения операции
-     * @param amount      общая сумма покупки
-     * @param operationId идентификатор операции
-     * @return текущий баланс карты
+     * @param cardId      РЅРѕРјРµСЂ РєР°СЂС‚С‹
+     * @param pointOfSale РјРµСЃС‚Рѕ СЃРѕРІРµСЂС€РµРЅРёСЏ РѕРїРµСЂР°С†РёРё
+     * @param amount      РѕР±С‰Р°СЏ СЃСѓРјРјР° РїРѕРєСѓРїРєРё
+     * @param operationId РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РѕРїРµСЂР°С†РёРё
+     * @return С‚РµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ РєР°СЂС‚С‹
      * @throws OperationAlreadyExistsException
-     *          если операция с таким идентификатором уже есть
+     *          РµСЃР»Рё РѕРїРµСЂР°С†РёСЏ СЃ С‚Р°РєРёРј РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРј СѓР¶Рµ РµСЃС‚СЊ
      */
     double award(String cardId, String pointOfSale, Double amount, String operationId) throws OperationAlreadyExistsException;
 
     /**
-     * Операция получения текущего баланса
+     * РћРїРµСЂР°С†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ С‚РµРєСѓС‰РµРіРѕ Р±Р°Р»Р°РЅСЃР°
      *
-     * @param cardId номер карты
-     * @return текущий баланс карты
-     * @throws CardNotFoundException если данные о карте отутствуют
+     * @param cardId РЅРѕРјРµСЂ РєР°СЂС‚С‹
+     * @return С‚РµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ РєР°СЂС‚С‹
+     * @throws CardNotFoundException РµСЃР»Рё РґР°РЅРЅС‹Рµ Рѕ РєР°СЂС‚Рµ РѕС‚СѓС‚СЃС‚РІСѓСЋС‚
      */
     double check(String cardId) throws CardNotFoundException;
 
     /**
-     * @param cardId      номер карты
-     * @param pointOfSale место совершения операции
-     * @param amount      общая сумма покупки
-     * @param operationId идентификатор операции
-     * @return текущий баланс карты
-     * @throws CardNotFoundException      если данные о карте отутствуют
+     * @param cardId      РЅРѕРјРµСЂ РєР°СЂС‚С‹
+     * @param pointOfSale РјРµСЃС‚Рѕ СЃРѕРІРµСЂС€РµРЅРёСЏ РѕРїРµСЂР°С†РёРё
+     * @param amount      РѕР±С‰Р°СЏ СЃСѓРјРјР° РїРѕРєСѓРїРєРё
+     * @param operationId РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РѕРїРµСЂР°С†РёРё
+     * @return С‚РµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ РєР°СЂС‚С‹
+     * @throws CardNotFoundException      РµСЃР»Рё РґР°РЅРЅС‹Рµ Рѕ РєР°СЂС‚Рµ РѕС‚СѓС‚СЃС‚РІСѓСЋС‚
      * @throws OperationAlreadyExistsException
-     *                                    если операция с таким идентификатором уже есть
-     * @throws InsufficientFundsException если на балансе карты не достаточно средств
+     *                                    РµСЃР»Рё РѕРїРµСЂР°С†РёСЏ СЃ С‚Р°РєРёРј РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРј СѓР¶Рµ РµСЃС‚СЊ
+     * @throws InsufficientFundsException РµСЃР»Рё РЅР° Р±Р°Р»Р°РЅСЃРµ РєР°СЂС‚С‹ РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ
      */
     double pay(String cardId, String pointOfSale, double amount, String operationId) throws CardNotFoundException, OperationAlreadyExistsException, InsufficientFundsException;
 }

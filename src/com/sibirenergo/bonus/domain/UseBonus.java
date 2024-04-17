@@ -6,11 +6,11 @@ package com.sibirenergo.bonus.domain;
  * User: Nikita Shutov
  * Date: 18.09.2010
  * Time: 14:48:00
- * Операция, соответствующая оплате бонусами
+ * РћРїРµСЂР°С†РёСЏ, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰Р°СЏ РѕРїР»Р°С‚Рµ Р±РѕРЅСѓСЃР°РјРё
  */
 public class UseBonus extends Operation {
     /**
-     * Сумма списанных с карты бонусов 
+     * РЎСѓРјРјР° СЃРїРёСЃР°РЅРЅС‹С… СЃ РєР°СЂС‚С‹ Р±РѕРЅСѓСЃРѕРІ 
      */
     private double amount;
 

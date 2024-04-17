@@ -9,7 +9,7 @@ import com.sibirenergo.bonus.domain.PointOfSale;
  * User: Nikita
  * Date: 19.09.2010
  * Time: 14:17:31
- * Интерфейс для операций с сущностями
+ * РРЅС‚РµСЂС„РµР№СЃ РґР»СЏ РѕРїРµСЂР°С†РёР№ СЃ СЃСѓС‰РЅРѕСЃС‚СЏРјРё
  */
 public interface BonusDao {
 

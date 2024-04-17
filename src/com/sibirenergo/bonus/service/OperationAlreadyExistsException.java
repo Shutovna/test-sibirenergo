@@ -5,7 +5,7 @@ package com.sibirenergo.bonus.service;
  * User: Nikita
  * Date: 19.09.2010
  * Time: 14:33:56
- * Генерируется в случае попытки создания опреации которая уже есть в базе
+ * Р“РµРЅРµСЂРёСЂСѓРµС‚СЃСЏ РІ СЃР»СѓС‡Р°Рµ РїРѕРїС‹С‚РєРё СЃРѕР·РґР°РЅРёСЏ РѕРїСЂРµР°С†РёРё РєРѕС‚РѕСЂР°СЏ СѓР¶Рµ РµСЃС‚СЊ РІ Р±Р°Р·Рµ
  */
 public class OperationAlreadyExistsException extends Exception {
 

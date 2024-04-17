@@ -8,16 +8,16 @@ import java.util.regex.Pattern;
  * User: Nikita Shutov
  * Date: 18.09.2010
  * Time: 14:48:11
- * Учётная запись карты
+ * РЈС‡С‘С‚РЅР°СЏ Р·Р°РїРёСЃСЊ РєР°СЂС‚С‹
  */
 public class Card {
     /**
-     * Уникальный номер карты в формате DDDD-DDDD-DDDD
+     * РЈРЅРёРєР°Р»СЊРЅС‹Р№ РЅРѕРјРµСЂ РєР°СЂС‚С‹ РІ С„РѕСЂРјР°С‚Рµ DDDD-DDDD-DDDD
      */
     private String number;
 
     /**
-     * Текущий баланс по карте
+     * РўРµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ РїРѕ РєР°СЂС‚Рµ
      */
     private double balance;
 
