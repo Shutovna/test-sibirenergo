@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sibirenergo.bonus.domain">
+
+    <class name="Operation" abstract="true" discriminator-value="Operation" table="OPERATION">
+        <id name="externalId" column="EXTERNAL_ID">
+            <generator class="assigned"/>
+        </id>
+        <discriminator column="TYPE" type="string" length="30" not-null="true"/>
+        <property name="timestamp" type="timestamp" column="TIMESTAMP"/>
+        <many-to-one name="card" class="Card" column="CARD_ID"/>
+        <many-to-one name="pointOfSale" class="PointOfSale" column="POINT_OF_SALE_ID" cascade="save-update"/>
+    </class>
+
+    <subclass name="Purchase" extends="Operation" discriminator-value="Purchase">
+        <property name="amount" type="double" column="AMOUNT"/>
+        <property name="award" type="double" column="AWARD"/>
+    </subclass>
+
+    <subclass name="UseBonus" extends="Operation" discriminator-value="UseBonus">
+        <property name="amount" type="double" column="AMOUNT"/>
+    </subclass>
+
+
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sibirenergo.bonus.domain">
+
+    <class name="PointOfSale" table="POINT_OF_SALE">
+        <id name="name" column="NAME">
+            <generator class="assigned"/>
+        </id>
+    </class>
+
+</hibernate-mapping>

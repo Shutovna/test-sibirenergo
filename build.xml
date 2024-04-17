@@ -1,0 +1,51 @@
+<project name="bonus" basedir="." default="deploy">
+
+    <property name="deploy.path" location="D:\work\apache-tomcat-7.0.2\webapps"/>
+
+    <path id="classpath">
+        <pathelement location="${basedir}"/>
+        <fileset dir="lib"/>
+        <pathelement location="build"/>
+    </path>
+
+    <target name="prepare">
+        <mkdir dir="build"/>
+        <mkdir dir="dist"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="build" failonerror="false"/>
+        <delete dir="dist" failonerror="false"/>
+    </target>
+
+    <target name="compile" depends="prepare">
+        <javac destdir="build"
+               srcdir="src"
+               debug="on"
+               deprecation="on"
+               optimize="off">
+            <classpath refid="classpath"/>
+        </javac>
+        <copy todir="build">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+
+    </target>
+
+    <target name="war" depends="clean, compile">
+        <war jarfile="dist/bonus.war">
+            <classes dir="build"/>
+            <webinf dir="WEB-INF"/>
+            <lib dir="lib" excludes="servlet-api.jar"/>
+            <fileset file="src/jdbc.properties"/>
+        </war>
+    </target>
+
+    <target name="deploy" depends="war">
+        <copy file="dist/bonus.war" todir="${deploy.path}" overwrite="true"/>
+    </target>
+
+</project>
+

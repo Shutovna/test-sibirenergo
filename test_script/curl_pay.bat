@@ -1,0 +1,2 @@
+curl.exe --data "" "http://localhost:8080/bonus?operation=pay&card=1234-5678-0000&pointOfSale=terminal123&amount=10&id=66778838"
+curl.exe --data "" "http://localhost:8080/bonus?operation=pay&card=1234-5678-0000&pointOfSale=terminal123&amount=1&id=66778839"
